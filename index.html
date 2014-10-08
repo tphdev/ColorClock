@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+
+		.grad-mask {
+			background: radial-gradient(rgba(225,225,225,.4), rgba(61,61,61,.60));
+			height: 500px;
+		}
+		
+		.container{
+			position: relative;
+			height: 500px;
+			background: rgb(173,33,33);
+			transition: background 5s;
+		}
+		
+
+		
+		.timer-box{
+			margin: 0;
+			position: absolute;
+			padding: 0;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			
+			color: #fff;
+			font-family: 'Geneva';
+		}
+		h1{
+		font-size: 4em;
+		margin: 0px;
+		}
+		.line{
+			border-top: 4px solid #fff;
+			margin: 1% auto;
+			width: 0%;
+		}
+
+	</style>
+</head>
+<body>
+<div class="container">
+<div class="grad-mask">
+	<div class="timer-box">
+		<h1>
+			<span class='hour'>00</span>:<span class='minute'>00</span>:<span class='second'>00</span>
+		</h1>
+		<div class="line"></div>
+	</div>
+</div> <!-- end container -->
+</div> <!-- end gradMask -->
+<script src="app.js"></script>
+</body>
+</html>
